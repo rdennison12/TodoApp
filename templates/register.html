@@ -1,0 +1,60 @@
+{% include 'layout.html' %}
+
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            Register
+        </div>
+        <div class="card-body">
+            <form id="registerForm" >
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" autocomplete="email" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="username">Username</label>
+                        <input type="text" class="form-control" id="username" name="username" autocomplete="username"
+                               required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="firstname">First Name</label>
+                        <input type="text" class="form-control" id="firstname" name="firstname" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" class="form-control" id="lastname" name="lastname" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="role">Role</label>
+                            <input type="text" class="form-control" id="role" name="role" required>
+                        </div>
+                        <!--phone number-->
+                        <div class="form-group col-md-6">
+                            <label for="phone_number">Phone Number</label>
+                            <input type="text" class="form-control" id="phone_number" name="phone_number" autocomplete="phone_number" required>
+                        </div>
+                        <!--password-->
+                        <div class="form-group col-md-6">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" id="password" name="password" autocomplete="new-password" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="password2">Verify Password</label>
+                            <input type="password" class="form-control" id="password2" name="password2" autocomplete="new-password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign In</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="card-footer text-muted">
+            <a href="/auth/login-page">Already have an account?</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
