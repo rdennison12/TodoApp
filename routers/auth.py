@@ -8,7 +8,6 @@ from passlib.context import CryptContext
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
 from starlette import status
-from env_config import ENV_SECRET_KEY, ENV_ALGORITHM
 from fastapi.templating import Jinja2Templates
 
 from database import SessionLocal
@@ -19,8 +18,8 @@ router = APIRouter(
     tags=["auth"]
 )
 
-SECRET_KEY = ENV_SECRET_KEY
-ALGORITHM = ENV_ALGORITHM
+SECRET_KEY = "29f3dfbde6ed455cf419c019c16be0641ba2f70ef5f6d3aeaafe2105d62ce4ab"
+ALGORITHM = "HS256"
 
 password_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 oauth2_bearer = OAuth2PasswordBearer(tokenUrl="auth/token")

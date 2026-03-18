@@ -10,6 +10,7 @@
 * Updated .gitignore
 * Added to GitHub 2026-03-17
 * Added requirements.txt
+* Added a secret key back in auth.py
 
 
 
