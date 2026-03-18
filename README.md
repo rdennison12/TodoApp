@@ -9,6 +9,7 @@
 * Completed building the front-end
 * Updated .gitignore
 * Added to GitHub 2026-03-17
+* Added requirements.txt
 
 
 
@@ -22,7 +23,7 @@ If the files are in the same directory, you can use the single dot (.)
 to refer to the current directory.
 -- Bug fix:
 If the page is not loading as expected, use the get_user_id_key().
-This is a function that get the proper key for the user id.
+This is a function that gets the proper key for the user id.
 
 
 **Running the app**
